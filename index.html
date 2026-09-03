@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Training Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="logo.png" alt="logo">
+        <div>
+           <h1>Employee Training Feedback System</h1>
+           <p>Improve Employee Learning Experience</p>
+        </div>
+        </div>
+    </header>
+    
+          
+    <div class="container">
+        <h2>Submit Feedback</h2>
+        <form id="feedbackForm">
+            <input type="text" id="empName" placeholder="Employee Name">
+            <input type="text" id="empId" placeholder="Employee ID">
+            <input type="email" id="email" placeholder="Employee's Official Email">
+
+            <select id="department">
+            <option value=""> Department</option>
+            <option>Development</option>
+            <option>Testing</option>
+            <option>HR</option>
+            <option>Support</option>
+            <option>Marketing</option>
+            </select>
+
+            <select id="training">
+                <option value="">Training Program</option>
+                <option>Java Full Stack</option>
+                <option>Python</option>
+                <option>Cloud Computing</option>
+                <option>AI & ML</option>
+                <option>Cyber Security</option>
+            </select>
+
+                <select id="rating">
+                    <option value="">Training Rating</option>
+                    <span class="stars">
+                    <option value="5"> &starf; &starf; &starf; &starf; &starf;</option>
+                    <option value="4"> &starf; &starf; &starf; &starf;</option>
+                    <option value="3"> &starf; &starf; &starf; </option>
+                    <option value="2"> &starf; &starf;</option>
+                    <option value="1"> &starf;</option>
+                    </span>
+
+                </select>
+
+        
+
+
+
+            <textarea id="comment" placeholder="Training Feedback"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+            
+            <div class="dashboard">
+                <div class="card">
+                    <h3>Total Feedback</h3>
+                    <p id="count">0</p>
+                </div>
+
+                 <div class="card">
+                    <h3>Average Rating</h3>
+                    <p id="avgRating">0</p>
+                </div>
+
+                 <div class="card">
+                    <h3>Departments</h3>
+                    <p>5</p>
+                </div>
+            
+            </div>
+
+            <input type="text" id="search" placeholder="Search Employee">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Training</th>
+                        <th>Rating</th>
+                        <th>Comment</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableData">
+                </tbody>
+            </table>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Employee Training Feedback System
+        </p>
+
+        <p>
+            Developed by Srushti Bhegade
+        </p>
+            Department of Computer Engineering
+        <p>
+            
+        </p>
+    </footer>
+
+
+   <script src="script.js"></script> 
+    
+</body>
+</html>
+
+
+
+
