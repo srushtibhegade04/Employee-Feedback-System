@@ -54,7 +54,11 @@ https://srushtibhegade04.github.io/Employee-Feedback-System/
 
 ## Screenshots
 
-Add screenshots of the project here.
+## Screenshots
+
+![Homepage Screenshot](photos/screenshot1.png)
+![Feedback Form Screenshot](photos/screenshot2.png)
+
 
 ## Future Improvements
 
